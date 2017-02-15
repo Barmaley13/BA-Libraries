@@ -53,6 +53,7 @@ Temporary Items
 *.epf
 *.lck
 *.log
+*.scr
 
 # Archives
 *.zip
