@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -12440,6 +12440,14 @@
 <rectangle x1="11.9634" y1="18.526759375" x2="11.99388125" y2="18.53691875" layer="21"/>
 <rectangle x1="11.973559375" y1="18.53691875" x2="11.99388125" y2="18.54708125" layer="21"/>
 </package>
+<package name="MOUNT-HOLE-NO-PLATE-7.5MM">
+<hole x="0" y="0" drill="7.5"/>
+</package>
+<package name="TEST-POINT-51MILL">
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.2954" shape="octagon"/>
+<text x="-1.3462" y="1.1938" size="0.8128" layer="25" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FIDUCIAL">
@@ -13703,7 +13711,15 @@ Various fiducial points for machine vision alignment.</description>
 <gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TEST-POINT-40MILL">
+<device name="40MIL" package="TEST-POINT-40MILL">
+<connects>
+<connect gate="G$1" pin="PP" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="51MIL" package="TEST-POINT-51MILL">
 <connects>
 <connect gate="G$1" pin="PP" pad="1"/>
 </connects>
@@ -13735,6 +13751,11 @@ Various fiducial points for machine vision alignment.</description>
 </technologies>
 </device>
 <device name="320MILS" package="MOUNT-HOLE-NO-PLATE-320MILS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="7.5MM" package="MOUNT-HOLE-NO-PLATE-7.5MM">
 <technologies>
 <technology name=""/>
 </technologies>
