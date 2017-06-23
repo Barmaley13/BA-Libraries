@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -108,6 +108,32 @@
 <wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.127" layer="21"/>
 <text x="-3.175" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="4.445" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="2N700E">
+<smd name="1" x="-0.95" y="-1" dx="0.9" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="0.95" y="-1" dx="0.9" dy="0.8" layer="1" rot="R90"/>
+<smd name="3" x="0" y="1" dx="0.9" dy="0.8" layer="1" rot="R90"/>
+<rectangle x1="-1.4" y1="-0.6" x2="1.4" y2="0.6" layer="39"/>
+<wire x1="-0.8" y1="0.6" x2="-1.4" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="0.6" x2="-1.4" y2="-0.2" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.6" x2="1.4" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.4" y1="0.6" x2="1.4" y2="-0.2" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="-0.6" x2="0.2" y2="-0.6" width="0.127" layer="21"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="DMG2302UK">
+<smd name="1" x="-0.95" y="-1" dx="0.9" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="0.95" y="-1" dx="0.9" dy="0.8" layer="1" rot="R90"/>
+<smd name="3" x="0" y="1" dx="0.9" dy="0.8" layer="1" rot="R90"/>
+<rectangle x1="-1.4" y1="-0.6" x2="1.4" y2="0.6" layer="39"/>
+<wire x1="-0.8" y1="0.6" x2="-1.4" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="0.6" x2="-1.4" y2="-0.2" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0.6" x2="1.4" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.4" y1="0.6" x2="1.4" y2="-0.2" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="-0.6" x2="0.2" y2="-0.6" width="0.127" layer="21"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -377,6 +403,50 @@
 <technologies>
 <technology name="">
 <attribute name="MAN-PART_NUM" value="DMP3036SSD" constant="no"/>
+<attribute name="MANUFACTURER" value="Diodes Inc." constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2N7002E" prefix="Q">
+<description>&lt;b&gt;N-Channel MOSFET&lt;/b&gt;&lt;br/&gt;
+60V 260mA (Ta) 300mW (Tj) Surface Mount SOT-23-3 (TO-236)</description>
+<gates>
+<gate name="G$1" symbol="N-MOSFET" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="2N700E">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MAN-PART_NUM" value="2N7002ET1G" constant="no"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DMG2302UK" prefix="Q">
+<description>&lt;b&gt;N-Channel MOSFET&lt;/b&gt;&lt;br/&gt;
+20V 2.8A (Ta) 660mW (Ta) Surface Mount SOT-23</description>
+<gates>
+<gate name="G$1" symbol="N-MOSFET" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="DMG2302UK">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MAN-PART_NUM" value="DMG2302UK" constant="no"/>
 <attribute name="MANUFACTURER" value="Diodes Inc." constant="no"/>
 </technology>
 </technologies>
