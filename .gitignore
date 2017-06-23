@@ -48,6 +48,7 @@ Temporary Items
 
 # Eagle Temp Files
 *.l\#*
+*.l\$*
 *.b\#*
 *.s\#*
 *.epf

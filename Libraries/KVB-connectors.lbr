@@ -1814,7 +1814,7 @@ Through Hole Tin</description>
 <technologies>
 <technology name="">
 <attribute name="MAN-PART_NUM" value="M20-9990446" constant="no"/>
-<attribute name="MANUFACTURER" value="Harwin Inc" constant="no"/>
+<attribute name="MANUFACTURER" value="Harwin Inc." constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1900,7 +1900,7 @@ Through Hole Gold</description>
 <technologies>
 <technology name="">
 <attribute name="MAN-PART_NUM" value="M20-9981045" constant="no"/>
-<attribute name="MANUFACTURER" value="Harwin" constant="no"/>
+<attribute name="MANUFACTURER" value="Harwin Inc." constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1923,7 +1923,7 @@ Through Hole Tin</description>
 <technologies>
 <technology name="">
 <attribute name="MAN-PART_NUM" value="M20-9990246" constant="no"/>
-<attribute name="MANUFACTURER" value="Harwin Inc" constant="no"/>
+<attribute name="MANUFACTURER" value="Harwin Inc." constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2813,7 +2813,7 @@ Through Hole Tin</description>
 <technologies>
 <technology name="">
 <attribute name="MAN-PART_NUM" value="M20-9992046" constant="no"/>
-<attribute name="MANUFACTURER" value="HARWIN" constant="no"/>
+<attribute name="MANUFACTURER" value="Harwin Inc." constant="no"/>
 </technology>
 </technologies>
 </device>
