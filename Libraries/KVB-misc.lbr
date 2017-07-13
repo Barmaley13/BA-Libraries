@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -22500,7 +22500,7 @@ Various fiducial points for machine vision alignment.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BA_LOGO">
+<deviceset name="BA_LOGO" prefix="LOGO">
 <description>Bolder Automation Logo</description>
 <gates>
 <gate name="G$1" symbol="BA_LOGO" x="0" y="0"/>
@@ -22518,7 +22518,7 @@ Various fiducial points for machine vision alignment.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ICT_LOGO">
+<deviceset name="ICT_LOGO" prefix="LOGO">
 <description>&lt;b&gt;ICT LOGO&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="ICT_LOGO" x="0" y="0"/>
@@ -22536,7 +22536,7 @@ Various fiducial points for machine vision alignment.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BB_LOGO">
+<deviceset name="BB_LOGO" prefix="LOGO">
 <description>Breaking Bitcoin Logo</description>
 <gates>
 <gate name="G$1" symbol="BB_LOGO" x="0" y="0"/>
@@ -22549,7 +22549,7 @@ Various fiducial points for machine vision alignment.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRYPTOTRONIX_LOGO">
+<deviceset name="CRYPTOTRONIX_LOGO" prefix="LOGO">
 <description>Cryptotronix Logo</description>
 <gates>
 <gate name="G$1" symbol="CRYPTOTRONIX_LOGO" x="0" y="0"/>
