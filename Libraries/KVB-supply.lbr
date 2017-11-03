@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -62,7 +63,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -71,6 +72,15 @@
 </layers>
 <library>
 <packages>
+<package name="TS920E">
+<smd name="1" x="0" y="1" dx="2.5" dy="0.75" layer="1"/>
+<smd name="2" x="0" y="-1" dx="2.5" dy="0.75" layer="1"/>
+<text x="0" y="2" size="1.27" layer="21">+</text>
+<text x="0" y="-3" size="1.27" layer="21">-</text>
+<circle x="-7" y="0" radius="4.75" width="0.127" layer="21"/>
+<text x="-10" y="5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-10" y="-7" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="1.8V">
@@ -188,6 +198,27 @@
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="1.2V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="2.0V">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="2.0V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="V_BAT">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="V_BAT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="TS920E">
+<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="5.08" visible="pad" length="middle" rot="R270"/>
+<pin name="P$2" x="0" y="-7.62" visible="pad" length="middle" rot="R90"/>
+<text x="2.54" y="2.54" size="1.778" layer="95">+</text>
+<text x="7.62" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-5.08" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -432,6 +463,49 @@
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2.0V" prefix="2.0V">
+<description>&lt;b&gt;2.0V&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="2.0V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="V_BAT" prefix="V_BAT">
+<description>&lt;b&gt;V_BAT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="V_BAT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TS920E" prefix="BAT">
+<description>BATT LITH 1.5V 5.5MAH COIN 9.5MM</description>
+<gates>
+<gate name="G$1" symbol="TS920E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TS920E">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
