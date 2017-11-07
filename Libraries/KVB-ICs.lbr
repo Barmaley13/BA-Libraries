@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -231,7 +231,7 @@
 <text x="-1.5" y="2" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.5" y="-3.5" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="SC70">
+<package name="SC70-6">
 <smd name="6" x="-0.65" y="0.8" dx="0.5" dy="0.4" layer="1" rot="R90"/>
 <smd name="5" x="0" y="0.8" dx="0.5" dy="0.4" layer="1" rot="R90"/>
 <smd name="4" x="0.65" y="0.8" dx="0.5" dy="0.4" layer="1" rot="R90"/>
@@ -526,12 +526,6 @@
 <smd name="8" x="2.14" y="0" dx="1.4" dy="0.28" layer="1"/>
 <smd name="7" x="2.14" y="-0.5" dx="1.4" dy="0.28" layer="1"/>
 <smd name="6" x="2.14" y="-1" dx="1.4" dy="0.28" layer="1"/>
-<polygon width="0.127" layer="39">
-<vertex x="-1.5" y="1.5"/>
-<vertex x="1.5" y="1.5"/>
-<vertex x="1.5" y="-1.5"/>
-<vertex x="-1.5" y="-1.5"/>
-</polygon>
 <wire x1="-1.5" y1="1.5" x2="-0.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="-0.5" y1="1.5" x2="-0.5" y2="1" width="0.127" layer="21"/>
 <wire x1="-0.5" y1="1" x2="0.5" y2="1" width="0.127" layer="21"/>
@@ -540,6 +534,24 @@
 <wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
 <text x="-2" y="2" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-2" y="-3" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-1.524" x2="1.524" y2="1.524" layer="39"/>
+</package>
+<package name="SC70-5">
+<smd name="5" x="-0.65" y="0.8" dx="0.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="4" x="0.65" y="0.8" dx="0.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="1" x="-0.65" y="-0.8" dx="0.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-0.8" dx="0.5" dy="0.4" layer="1" rot="R90"/>
+<smd name="3" x="0.65" y="-0.8" dx="0.5" dy="0.4" layer="1" rot="R90"/>
+<rectangle x1="-1" y1="-0.625" x2="1" y2="0.625" layer="39"/>
+<wire x1="1" y1="0.3" x2="1" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.3" x2="-1" y2="-0.15" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.15" x2="-0.8" y2="-0.15" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.15" x2="-0.8" y2="0.15" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="0.15" x2="-1" y2="0.15" width="0.127" layer="21"/>
+<wire x1="-1" y1="0.15" x2="-1" y2="0.3" width="0.127" layer="21"/>
+<text x="-1.5" y="-1" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-1.5" y="-1" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.5" y="-1" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -597,7 +609,7 @@ SOT-23-3</description>
 <text x="-10.16" y="10.668" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="NC7WZ14">
+<symbol name="NC7WZ14P6X">
 <pin name="VCC" x="0" y="20.32" length="middle" rot="R270"/>
 <pin name="GND" x="0" y="-20.32" length="middle" rot="R90"/>
 <pin name="A1" x="-12.7" y="5.08" visible="pad" length="middle"/>
@@ -914,6 +926,25 @@ SOT-23-3</description>
 <text x="0" y="0.508" size="1.778" layer="95">&gt;NAME</text>
 <text x="25.4" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="NC7SV126P5X">
+<pin name="OE" x="-5.08" y="-7.62" length="middle"/>
+<pin name="A" x="-5.08" y="-12.7" visible="pad" length="middle"/>
+<pin name="GND" x="7.62" y="-30.48" length="middle" rot="R90"/>
+<pin name="VCC" x="7.62" y="5.08" length="middle" rot="R270"/>
+<pin name="Y" x="20.32" y="-12.7" visible="pad" length="middle" rot="R180"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="15.24" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-25.4" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.508" size="1.778" layer="95">&gt;NAME</text>
+<text x="15.24" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="L6470" prefix="U">
@@ -992,10 +1023,10 @@ IC-10648</description>
 Schmitt Trigger&lt;br/&gt;
 SC-70-6</description>
 <gates>
-<gate name="G$1" symbol="NC7WZ14" x="0" y="0"/>
+<gate name="G$1" symbol="NC7WZ14P6X" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SC70" package="SC70">
+<device name="SC70" package="SC70-6">
 <connects>
 <connect gate="G$1" pin="A1" pad="1"/>
 <connect gate="G$1" pin="A2" pad="3"/>
@@ -1267,7 +1298,7 @@ SC-70-6</description>
 <gate name="G$1" symbol="NC7WZ07P6X" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SC70">
+<device name="" package="SC70-6">
 <connects>
 <connect gate="G$1" pin="A1" pad="1"/>
 <connect gate="G$1" pin="A2" pad="3"/>
@@ -1398,6 +1429,27 @@ Positive Fixed Output 3.3V 250mA SOT-23A-3</description>
 <connect gate="G$1" pin="VCC" pad="10"/>
 <connect gate="G$1" pin="X1" pad="1"/>
 <connect gate="G$1" pin="X2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC7SV126P5X" prefix="U">
+<description>&lt;b&gt;Non-Inverting Buffer&lt;/b&gt;&lt;br/&gt;
+1 Element 1 Bit per Element Push-Pull Output SC-70-5</description>
+<gates>
+<gate name="G$1" symbol="NC7SV126P5X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC70-5">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OE" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
