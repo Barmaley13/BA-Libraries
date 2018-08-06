@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -249,6 +249,20 @@
 <circle x="-2.2" y="0" radius="0.22360625" width="0.127" layer="21"/>
 <text x="-2" y="1" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="EAST1616RGBB2">
+<smd name="2" x="-1.2" y="0.45" dx="0.8" dy="0.55" layer="1"/>
+<smd name="1" x="-1.2" y="-0.45" dx="0.8" dy="0.55" layer="1"/>
+<smd name="4" x="1.2" y="-0.45" dx="0.8" dy="0.55" layer="1"/>
+<smd name="3" x="1.2" y="0.45" dx="0.8" dy="0.55" layer="1"/>
+<rectangle x1="-0.8" y1="-0.8" x2="0.8" y2="0.8" layer="39"/>
+<wire x1="0.6" y1="0.8" x2="0.6" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.6" y1="0" x2="0.6" y2="-0.8" width="0.1524" layer="21"/>
+<wire x1="0.6" y1="0" x2="1" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.6" y1="0.8" x2="-0.6" y2="-0.8" width="0.1524" layer="21"/>
+<circle x="-2.3" y="-0.5" radius="0.282840625" width="0.1524" layer="21"/>
+<text x="-2" y="1.1" size="1.27" layer="25" font="vector" ratio="11">&gt;NAME</text>
+<text x="-2" y="-2.4" size="1.27" layer="27" font="vector" ratio="11">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -542,6 +556,87 @@
 <wire x1="5.08" y1="-2.54" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-2.54" x2="20.32" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
+<symbol name="EAST1616RGBB2">
+<pin name="R-" x="5.08" y="-15.24" visible="pad" length="middle" rot="R90"/>
+<pin name="A" x="12.7" y="5.08" visible="pad" length="middle" rot="R270"/>
+<pin name="G-" x="12.7" y="-15.24" visible="pad" length="middle" rot="R90"/>
+<wire x1="13.97" y1="-5.08" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="11.43" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="13.97" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="11.43" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="13.97" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="11.43" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.668" y1="-5.842" x2="9.271" y2="-7.239" width="0.1524" layer="94"/>
+<wire x1="10.795" y1="-6.985" x2="9.398" y2="-8.382" width="0.1524" layer="94"/>
+<text x="0" y="0.508" size="1.778" layer="95">&gt;NAME</text>
+<text x="25.4" y="-12.573" size="1.778" layer="96">&gt;VALUE</text>
+<polygon width="0.1524" layer="94">
+<vertex x="9.271" y="-7.239"/>
+<vertex x="9.652" y="-6.35"/>
+<vertex x="10.16" y="-6.858"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="9.398" y="-8.382"/>
+<vertex x="9.779" y="-7.493"/>
+<vertex x="10.287" y="-8.001"/>
+</polygon>
+<wire x1="6.35" y1="-5.08" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="3.81" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="6.35" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="3.81" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="6.35" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="3.81" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-5.842" x2="1.651" y2="-7.239" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="-6.985" x2="1.778" y2="-8.382" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="1.651" y="-7.239"/>
+<vertex x="2.032" y="-6.35"/>
+<vertex x="2.54" y="-6.858"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="1.778" y="-8.382"/>
+<vertex x="2.159" y="-7.493"/>
+<vertex x="2.667" y="-8.001"/>
+</polygon>
+<wire x1="0" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-2.54" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<text x="22.86" y="-5.08" size="1.778" layer="94">B</text>
+<text x="15.24" y="-5.08" size="1.778" layer="94">G</text>
+<pin name="B-" x="20.32" y="-15.24" visible="pad" length="middle" rot="R90"/>
+<wire x1="21.59" y1="-5.08" x2="20.32" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="19.05" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="21.59" y1="-7.62" x2="20.32" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="19.05" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="21.59" y1="-5.08" x2="20.32" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-5.08" x2="19.05" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="18.288" y1="-5.842" x2="16.891" y2="-7.239" width="0.1524" layer="94"/>
+<wire x1="18.415" y1="-6.985" x2="17.018" y2="-8.382" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="16.891" y="-7.239"/>
+<vertex x="17.272" y="-6.35"/>
+<vertex x="17.78" y="-6.858"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="17.018" y="-8.382"/>
+<vertex x="17.399" y="-7.493"/>
+<vertex x="17.907" y="-8.001"/>
+</polygon>
+<wire x1="20.32" y1="-2.54" x2="20.32" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="20.32" y2="-10.16" width="0.254" layer="94"/>
+<text x="7.62" y="-5.08" size="1.778" layer="94">R</text>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-2.54" x2="20.32" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BAV99" prefix="D">
@@ -732,6 +827,30 @@ Discrete 2V Red, 2.8V Green, 3V Blue 4-SMD, No Lead</description>
 <technology name="">
 <attribute name="MAN-PART_NUM" value="155124M173200" constant="no"/>
 <attribute name="MANUFACTURER" value="Wurth Electronics" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EAST1616RGBB2" prefix="D">
+<description>&lt;b&gt;Red, Green, Blue (RGB)  LED Indication - Discrete&lt;/b&gt;&lt;br/&gt;
+1.9V Red, 2.8V Green, 2.8V Blue&lt;br/&gt;
+0606 (1616 Metric)</description>
+<gates>
+<gate name="G$1" symbol="EAST1616RGBB2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EAST1616RGBB2">
+<connects>
+<connect gate="G$1" pin="A" pad="4"/>
+<connect gate="G$1" pin="B-" pad="3"/>
+<connect gate="G$1" pin="G-" pad="2"/>
+<connect gate="G$1" pin="R-" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MAN-PART_NUM" value="EAST1616RGBB2" constant="no"/>
+<attribute name="MANUFACTURER" value="Everlight Electronics" constant="no"/>
 </technology>
 </technologies>
 </device>

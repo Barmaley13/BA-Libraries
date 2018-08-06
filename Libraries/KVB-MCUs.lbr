@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -661,6 +661,48 @@
 <rectangle x1="4.95" y1="7.85" x2="6.05" y2="8.15" layer="31" rot="R90"/>
 <rectangle x1="5.45" y1="7.85" x2="6.55" y2="8.15" layer="31" rot="R90"/>
 </package>
+<package name="ATSAML11E16A-AU">
+<rectangle x1="-3.5" y1="-3.5" x2="3.5" y2="3.5" layer="39"/>
+<smd name="1" x="-4.5" y="2.8" dx="1.2" dy="0.4" layer="1"/>
+<smd name="2" x="-4.5" y="2" dx="1.2" dy="0.4" layer="1"/>
+<smd name="3" x="-4.5" y="1.2" dx="1.2" dy="0.4" layer="1"/>
+<smd name="4" x="-4.5" y="0.4" dx="1.2" dy="0.4" layer="1"/>
+<smd name="5" x="-4.5" y="-0.4" dx="1.2" dy="0.4" layer="1"/>
+<smd name="6" x="-4.5" y="-1.2" dx="1.2" dy="0.4" layer="1"/>
+<smd name="7" x="-4.5" y="-2" dx="1.2" dy="0.4" layer="1"/>
+<smd name="8" x="-4.5" y="-2.8" dx="1.2" dy="0.4" layer="1"/>
+<smd name="9" x="-2.8" y="-4.5" dx="1.2" dy="0.4" layer="1" rot="R90"/>
+<smd name="10" x="-2" y="-4.5" dx="1.2" dy="0.4" layer="1" rot="R90"/>
+<smd name="11" x="-1.2" y="-4.5" dx="1.2" dy="0.4" layer="1" rot="R90"/>
+<smd name="12" x="-0.4" y="-4.5" dx="1.2" dy="0.4" layer="1" rot="R90"/>
+<smd name="13" x="0.4" y="-4.5" dx="1.2" dy="0.4" layer="1" rot="R90"/>
+<smd name="14" x="1.2" y="-4.5" dx="1.2" dy="0.4" layer="1" rot="R90"/>
+<smd name="15" x="2" y="-4.5" dx="1.2" dy="0.4" layer="1" rot="R90"/>
+<smd name="16" x="2.8" y="-4.5" dx="1.2" dy="0.4" layer="1" rot="R90"/>
+<smd name="17" x="4.5" y="-2.8" dx="1.2" dy="0.4" layer="1" rot="R180"/>
+<smd name="18" x="4.5" y="-2" dx="1.2" dy="0.4" layer="1" rot="R180"/>
+<smd name="19" x="4.5" y="-1.2" dx="1.2" dy="0.4" layer="1" rot="R180"/>
+<smd name="20" x="4.5" y="-0.4" dx="1.2" dy="0.4" layer="1" rot="R180"/>
+<smd name="21" x="4.5" y="0.4" dx="1.2" dy="0.4" layer="1" rot="R180"/>
+<smd name="22" x="4.5" y="1.2" dx="1.2" dy="0.4" layer="1" rot="R180"/>
+<smd name="23" x="4.5" y="2" dx="1.2" dy="0.4" layer="1" rot="R180"/>
+<smd name="24" x="4.5" y="2.8" dx="1.2" dy="0.4" layer="1" rot="R180"/>
+<smd name="25" x="2.8" y="4.5" dx="1.2" dy="0.4" layer="1" rot="R270"/>
+<smd name="26" x="2" y="4.5" dx="1.2" dy="0.4" layer="1" rot="R270"/>
+<smd name="27" x="1.2" y="4.5" dx="1.2" dy="0.4" layer="1" rot="R270"/>
+<smd name="28" x="0.4" y="4.5" dx="1.2" dy="0.4" layer="1" rot="R270"/>
+<smd name="29" x="-0.4" y="4.5" dx="1.2" dy="0.4" layer="1" rot="R270"/>
+<smd name="30" x="-1.2" y="4.5" dx="1.2" dy="0.4" layer="1" rot="R270"/>
+<smd name="31" x="-2" y="4.5" dx="1.2" dy="0.4" layer="1" rot="R270"/>
+<smd name="32" x="-2.8" y="4.5" dx="1.2" dy="0.4" layer="1" rot="R270"/>
+<wire x1="-3.5" y1="3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="-3.5" y2="3.5" width="0.127" layer="21"/>
+<circle x="-2.5" y="2.5" radius="0.5" width="0.127" layer="21"/>
+<text x="-4" y="6" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4" y="-7" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="STM32F205RE-A">
@@ -1074,6 +1116,54 @@
 <pin name="VCAP2" x="-5.08" y="-35.56" length="middle"/>
 <pin name="VDD5" x="-5.08" y="-25.4" length="middle"/>
 <pin name="VDD6" x="-5.08" y="-27.94" length="middle"/>
+</symbol>
+<symbol name="ATSAML11E-A">
+<pin name="PA01" x="-5.08" y="-5.08" length="middle"/>
+<pin name="PA02" x="-5.08" y="-7.62" length="middle"/>
+<pin name="PA03" x="-5.08" y="-10.16" length="middle"/>
+<pin name="PA04" x="-5.08" y="-15.24" length="middle"/>
+<pin name="PA05" x="-5.08" y="-17.78" length="middle"/>
+<pin name="PA06" x="-5.08" y="-20.32" length="middle"/>
+<pin name="PA07" x="-5.08" y="-22.86" length="middle"/>
+<pin name="PA08" x="-5.08" y="-27.94" length="middle"/>
+<pin name="PA09" x="-5.08" y="-30.48" length="middle"/>
+<pin name="PA10" x="-5.08" y="-33.02" length="middle"/>
+<pin name="PA11" x="-5.08" y="-35.56" length="middle"/>
+<pin name="PA14" x="-5.08" y="-40.64" length="middle"/>
+<pin name="PA15" x="-5.08" y="-43.18" length="middle"/>
+<pin name="PA16" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="PA17" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="PA18" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="PA19" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="PA22" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="PA23" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="PA24" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="PA25" x="25.4" y="-22.86" length="middle" rot="R180"/>
+<pin name="PA27" x="25.4" y="-27.94" length="middle" rot="R180"/>
+<pin name="PA30" x="25.4" y="-33.02" length="middle" rot="R180"/>
+<pin name="PA31" x="25.4" y="-35.56" length="middle" rot="R180"/>
+<pin name="PA00" x="-5.08" y="-2.54" length="middle"/>
+<wire x1="0" y1="0" x2="0" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="0" y1="-45.72" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-45.72" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="0.508" size="1.778" layer="95">&gt;NAME</text>
+<text x="20.32" y="-48.26" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ATSAML11E-B">
+<pin name="!RESET" x="-5.08" y="-12.7" length="middle"/>
+<pin name="GNDA" x="12.7" y="-30.48" length="middle" rot="R90"/>
+<pin name="GND" x="25.4" y="-30.48" length="middle" rot="R90"/>
+<pin name="VDDA" x="12.7" y="5.08" length="middle" rot="R270"/>
+<pin name="VDDOUT" x="25.4" y="5.08" length="middle" rot="R270"/>
+<pin name="VDDIO" x="17.78" y="5.08" length="middle" rot="R270"/>
+<pin name="VDDCORE" x="20.32" y="5.08" length="middle" rot="R270"/>
+<text x="0" y="0.508" size="1.778" layer="95">&gt;NAME</text>
+<text x="27.94" y="-27.94" size="1.778" layer="95">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="27.94" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-25.4" x2="27.94" y2="0" width="0.254" layer="94"/>
+<wire x1="27.94" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1498,6 +1588,59 @@
 <technology name="">
 <attribute name="MAN-PART_NUM" value="STM32F427VIT6" constant="no"/>
 <attribute name="MANUFACTURER" value="STMicroelectronics" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATSAML11E16A-AU" prefix="U">
+<description>&lt;b&gt;ARM® Cortex®-M23 SAM L11 Microcontroller IC&lt;/b&gt;&lt;br/&gt;
+32-Bit 32MHz 64KB (64K x 8) FLASH&lt;br/&gt;
+32-TQFP (7x7)</description>
+<gates>
+<gate name="A" symbol="ATSAML11E-A" x="0" y="0"/>
+<gate name="B" symbol="ATSAML11E-B" x="63.5" y="0"/>
+</gates>
+<devices>
+<device name="" package="ATSAML11E16A-AU">
+<connects>
+<connect gate="A" pin="PA00" pad="1"/>
+<connect gate="A" pin="PA01" pad="2"/>
+<connect gate="A" pin="PA02" pad="3"/>
+<connect gate="A" pin="PA03" pad="4"/>
+<connect gate="A" pin="PA04" pad="5"/>
+<connect gate="A" pin="PA05" pad="6"/>
+<connect gate="A" pin="PA06" pad="7"/>
+<connect gate="A" pin="PA07" pad="8"/>
+<connect gate="A" pin="PA08" pad="11"/>
+<connect gate="A" pin="PA09" pad="12"/>
+<connect gate="A" pin="PA10" pad="13"/>
+<connect gate="A" pin="PA11" pad="14"/>
+<connect gate="A" pin="PA14" pad="15"/>
+<connect gate="A" pin="PA15" pad="16"/>
+<connect gate="A" pin="PA16" pad="17"/>
+<connect gate="A" pin="PA17" pad="18"/>
+<connect gate="A" pin="PA18" pad="19"/>
+<connect gate="A" pin="PA19" pad="20"/>
+<connect gate="A" pin="PA22" pad="21"/>
+<connect gate="A" pin="PA23" pad="22"/>
+<connect gate="A" pin="PA24" pad="23"/>
+<connect gate="A" pin="PA25" pad="24"/>
+<connect gate="A" pin="PA27" pad="25"/>
+<connect gate="A" pin="PA30" pad="31"/>
+<connect gate="A" pin="PA31" pad="32"/>
+<connect gate="B" pin="!RESET" pad="26"/>
+<connect gate="B" pin="GND" pad="28"/>
+<connect gate="B" pin="GNDA" pad="10"/>
+<connect gate="B" pin="VDDA" pad="9"/>
+<connect gate="B" pin="VDDCORE" pad="27"/>
+<connect gate="B" pin="VDDIO" pad="30"/>
+<connect gate="B" pin="VDDOUT" pad="29"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MAN-PART_NUM" value="ATSAML11E16A-AU" constant="no"/>
+<attribute name="MANUFACTURER" value="Microchip Technology" constant="no"/>
 </technology>
 </technologies>
 </device>
