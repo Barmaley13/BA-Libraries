@@ -1377,16 +1377,16 @@
 <wire x1="27.94" y1="-14.605" x2="27.94" y2="14.605" width="0.1524" layer="51"/>
 <wire x1="27.94" y1="14.605" x2="25.4" y2="17.145" width="0.1524" layer="51" curve="90"/>
 <wire x1="25.4" y1="17.145" x2="-25.4" y2="17.145" width="0.1524" layer="51"/>
-<text x="-24.13" y="8.89" size="1.016" layer="21" font="vector" ratio="11" rot="R180" align="center-right">VCC</text>
-<text x="-24.13" y="6.35" size="1.016" layer="21" font="vector" ratio="11" rot="R180" align="center-right">RESET</text>
-<text x="-24.13" y="3.81" size="1.016" layer="21" font="vector" ratio="11" rot="R180" align="center-right">D/C</text>
-<text x="-24.13" y="1.27" size="1.016" layer="21" font="vector" ratio="11" rot="R180" align="center-right">CARD_CS</text>
-<text x="-24.13" y="-1.27" size="1.016" layer="21" font="vector" ratio="11" rot="R180" align="center-right">TFT_CS</text>
-<text x="-24.13" y="-3.81" size="1.016" layer="21" font="vector" ratio="11" rot="R180" align="center-right">MOSI</text>
-<text x="-24.13" y="-6.35" size="1.016" layer="21" font="vector" ratio="11" rot="R180" align="center-right">SCK</text>
-<text x="-24.13" y="-8.89" size="1.016" layer="21" font="vector" ratio="11" rot="R180" align="center-right">MISO</text>
-<text x="-24.13" y="-11.43" size="1.016" layer="21" font="vector" ratio="11" rot="R180" align="center-right">LITE</text>
-<text x="-24.13" y="11.43" size="1.016" layer="21" font="vector" ratio="11" rot="R180" align="center-right">GND</text>
+<text x="-24.13" y="8.89" size="1.27" layer="21" font="vector" ratio="11" rot="R180" align="center-right">VCC</text>
+<text x="-24.13" y="6.35" size="1.27" layer="21" font="vector" ratio="11" rot="R180" align="center-right">RESET</text>
+<text x="-24.13" y="3.81" size="1.27" layer="21" font="vector" ratio="11" rot="R180" align="center-right">D/C</text>
+<text x="-24.13" y="1.27" size="1.27" layer="21" font="vector" ratio="11" rot="R180" align="center-right">CARD_CS</text>
+<text x="-24.13" y="-1.27" size="1.27" layer="21" font="vector" ratio="11" rot="R180" align="center-right">TFT_CS</text>
+<text x="-24.13" y="-3.81" size="1.27" layer="21" font="vector" ratio="11" rot="R180" align="center-right">MOSI</text>
+<text x="-24.13" y="-6.35" size="1.27" layer="21" font="vector" ratio="11" rot="R180" align="center-right">SCK</text>
+<text x="-24.13" y="-8.89" size="1.27" layer="21" font="vector" ratio="11" rot="R180" align="center-right">MISO</text>
+<text x="-24.13" y="-11.43" size="1.27" layer="21" font="vector" ratio="11" rot="R180" align="center-right">LITE</text>
+<text x="-24.13" y="11.43" size="1.27" layer="21" font="vector" ratio="11" rot="R180" align="center-right">GND</text>
 <hole x="-25.4" y="14.605" drill="2.2"/>
 <hole x="-25.4" y="-14.605" drill="2.2"/>
 <hole x="25.4" y="-14.605" drill="2.2"/>
