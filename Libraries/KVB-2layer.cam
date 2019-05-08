@@ -136,7 +136,7 @@
                         29
                     ],
                     "name": "Soldermask Top",
-                    "polarity": "negative",
+                    "polarity": "positive",
                     "type": "gerber_layer"
                 },
                 {
@@ -158,7 +158,7 @@
                         30
                     ],
                     "name": "Soldermask Bottom",
-                    "polarity": "negative",
+                    "polarity": "positive",
                     "type": "gerber_layer"
                 },
                 {
@@ -255,9 +255,15 @@
                 }
             ],
             "version": "RS274X"
+        },
+        {
+            "filename_prefix": "CAMOutputs/DrawingFiles",
+            "output_type": "drawing",
+            "outputs": [
+            ]
         }
     ],
-    "timestamp": "2018-12-13T17:58:14",
+    "timestamp": "2019-02-22T12:10:50",
     "type": "EAGLE CAM job",
     "units": "imperial",
     "version": "8.6.1"
