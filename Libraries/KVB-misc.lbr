@@ -28750,6 +28750,9 @@
 <rectangle x1="5.9055" y1="6.1087" x2="6.6167" y2="6.1341" layer="21"/>
 <rectangle x1="6.1849" y1="6.1341" x2="6.3373" y2="6.1595" layer="21"/>
 </package>
+<package name="MOUNT-HOLE-NO-PLATE-170MILS">
+<hole x="0" y="0" drill="4.318"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FIDUCIAL">
@@ -39030,6 +39033,11 @@ Various fiducial points for machine vision alignment.</description>
 </technologies>
 </device>
 <device name="125MILS" package="MOUNT-HOLE-NO-PLATE-125MILS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="170MILS" package="MOUNT-HOLE-NO-PLATE-170MILS">
 <technologies>
 <technology name=""/>
 </technologies>
