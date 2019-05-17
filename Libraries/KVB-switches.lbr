@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="9.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -221,6 +221,25 @@
 <text x="-3" y="2.3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="-3.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="TL3360DF260Q">
+<rectangle x1="-3.1369" y1="-4.3688" x2="3.1369" y2="0" layer="39"/>
+<text x="3.81" y="0" size="1.27" layer="25">&gt;NAME</text>
+<text x="5.08" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="5" x="0" y="0.8255" dx="5.334" dy="2.413" layer="1"/>
+<smd name="3" x="-3.65125" y="-3.0353" dx="4.191" dy="1.4605" layer="1" rot="R90"/>
+<smd name="1" x="-1.87325" y="-3.5814" dx="3.7592" dy="1.2065" layer="1" rot="R90"/>
+<smd name="2" x="1.87325" y="-3.5814" dx="3.7592" dy="1.2065" layer="1" rot="R90"/>
+<smd name="4" x="3.65125" y="-3.0353" dx="4.191" dy="1.4605" layer="1" rot="R90"/>
+<wire x1="-2.794" y1="0" x2="-3.175" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="0" x2="-3.175" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="2.794" y1="0" x2="3.175" y2="0" width="0.127" layer="21"/>
+<wire x1="3.175" y1="0" x2="3.175" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-1.143" y1="-4.445" x2="1.143" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="4.3434" width="0.127" layer="51"/>
+<wire x1="-1.905" y1="4.3434" x2="1.905" y2="4.3434" width="0.127" layer="51"/>
+<wire x1="1.905" y1="4.3434" x2="1.905" y2="0" width="0.127" layer="51"/>
+<wire x1="1.905" y1="0" x2="-1.905" y2="0" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1-1825027-7">
@@ -276,6 +295,24 @@
 <circle x="0" y="5.08" radius="5.08" width="0.254" layer="94"/>
 <text x="-5.08" y="15.748" size="1.778" layer="95">&gt;NAME</text>
 <text x="5.08" y="-2.54" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="TL3360DF260Q">
+<circle x="-2.54" y="0" radius="0.762" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.762" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-1.778" y2="0.508" width="0.254" layer="94"/>
+<pin name="P$1" x="-12.7" y="0" visible="pad" length="middle"/>
+<pin name="P$2" x="12.7" y="0" visible="pad" length="middle" rot="R180"/>
+<pin name="GND1" x="-2.54" y="-15.24" length="middle" rot="R90"/>
+<pin name="GND2" x="0" y="-15.24" length="middle" rot="R90"/>
+<wire x1="-7.62" y1="0" x2="-3.302" y2="0" width="0.254" layer="94"/>
+<wire x1="3.302" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND3" x="2.54" y="-15.24" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -366,6 +403,30 @@ Right Angle</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TL3360DF260Q" prefix="S">
+<description>&lt;b&gt;Tactile Switch SPST-NO&lt;/b&gt;&lt;br/&gt;
+Side Actuated Surface Mount, Right Angle</description>
+<gates>
+<gate name="G$1" symbol="TL3360DF260Q" x="7.62" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="TL3360DF260Q">
+<connects>
+<connect gate="G$1" pin="GND1" pad="3"/>
+<connect gate="G$1" pin="GND2" pad="4"/>
+<connect gate="G$1" pin="GND3" pad="5"/>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MAN-PART_NUM" value="TL3360DF260Q" constant="no"/>
+<attribute name="MANUFACTURER" value="E-Switch" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
