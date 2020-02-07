@@ -241,7 +241,9 @@
                     },
                     "filename_format": "%PREFIX/%FF.gbr",
                     "layers": [
-                        2
+                        2,
+                        17,
+                        18
                     ],
                     "milling": false,
                     "name": "Layer 2 Copper",
@@ -265,7 +267,9 @@
                     },
                     "filename_format": "%PREFIX/%FF.gbr",
                     "layers": [
-                        15
+                        15,
+                        17,
+                        18
                     ],
                     "milling": false,
                     "name": "Layer 3 Copper",
@@ -318,7 +322,7 @@
             ]
         }
     ],
-    "timestamp": "2019-10-31T17:45:18",
+    "timestamp": "2020-02-06T07:42:49",
     "type": "EAGLE CAM job",
     "units": "imperial",
     "version": "8.6.1"
