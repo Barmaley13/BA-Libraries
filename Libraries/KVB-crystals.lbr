@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <eagle version="8.4.1">
 <drawing>
 <settings>
@@ -62,17 +61,7 @@
 </layers>
 <library>
 <packages>
-<package name="CMR200T32768DZYT">
-<smd name="P$1" x="3.875" y="1.5" dx="2.5" dy="1" layer="1"/>
-<smd name="P$2" x="3.875" y="-1.5" dx="2.5" dy="1" layer="1"/>
-<smd name="P$3" x="-3.875" y="0" dx="2.5" dy="2.5" layer="1"/>
-<rectangle x1="-5" y1="-1" x2="2" y2="1" layer="39"/>
-<wire x1="-2" y1="1" x2="2" y2="1" width="0.127" layer="21"/>
-<wire x1="-2" y1="-1" x2="2" y2="-1" width="0.127" layer="21"/>
-<text x="-5" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="ABL-8.000MHZ-B2">
+<package name="ABL-8.000MHZ-B2" urn="urn:adsk.eagle:footprint:32408726/1">
 <pad name="1" x="-2.4384" y="0" drill="0.635"/>
 <pad name="2" x="2.4384" y="0" drill="0.635"/>
 <wire x1="-5.715" y1="0" x2="-3.175" y2="2.54" width="0.127" layer="21" curve="-90"/>
@@ -84,23 +73,7 @@
 <text x="-3.175" y="3.175" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.175" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="CFS-20632768DZCB">
-<circle x="0" y="0" radius="1" width="0.127" layer="21"/>
-<pad name="1" x="-0.45" y="0" drill="0.3" diameter="0.6"/>
-<pad name="2" x="0.45" y="0" drill="0.3" diameter="0.6"/>
-<text x="-1" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="ABS07AIG-32.768KHZ-9-T">
-<smd name="1" x="-1.275" y="0" dx="1" dy="1.8" layer="1"/>
-<smd name="2" x="1.275" y="0" dx="1" dy="1.8" layer="1"/>
-<rectangle x1="-1.6" y1="-0.75" x2="1.6" y2="0.75" layer="39"/>
-<wire x1="-0.25" y1="0.75" x2="0.25" y2="0.75" width="0.127" layer="21"/>
-<wire x1="-0.25" y1="-0.75" x2="0.25" y2="-0.75" width="0.127" layer="21"/>
-<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="ABM3B-8.000MHZ-B2">
+<package name="ABM3B-8.000MHZ-B2" urn="urn:adsk.eagle:footprint:32408720/1">
 <smd name="1" x="-2" y="-1.2" dx="1.8" dy="1.2" layer="1"/>
 <smd name="2" x="2" y="-1.2" dx="1.8" dy="1.2" layer="1"/>
 <smd name="3" x="2" y="1.2" dx="1.8" dy="1.2" layer="1"/>
@@ -114,9 +87,62 @@
 <text x="-4" y="-2" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="5" y="-2" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="CMR200T32768DZYT" urn="urn:adsk.eagle:footprint:32408729/1">
+<smd name="P$1" x="3.875" y="1.5" dx="2.5" dy="1" layer="1"/>
+<smd name="P$2" x="3.875" y="-1.5" dx="2.5" dy="1" layer="1"/>
+<smd name="P$3" x="-3.875" y="0" dx="2.5" dy="2.5" layer="1"/>
+<rectangle x1="-5" y1="-1" x2="2" y2="1" layer="39"/>
+<wire x1="-2" y1="1" x2="2" y2="1" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1" x2="2" y2="-1" width="0.127" layer="21"/>
+<text x="-5" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="CFS-20632768DZCB" urn="urn:adsk.eagle:footprint:32408724/1">
+<circle x="0" y="0" radius="1" width="0.127" layer="21"/>
+<pad name="1" x="-0.45" y="0" drill="0.3" diameter="0.6"/>
+<pad name="2" x="0.45" y="0" drill="0.3" diameter="0.6"/>
+<text x="-1" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="ABS07AIG-32.768KHZ-9-T" urn="urn:adsk.eagle:footprint:32408722/1">
+<smd name="1" x="-1.275" y="0" dx="1" dy="1.8" layer="1"/>
+<smd name="2" x="1.275" y="0" dx="1" dy="1.8" layer="1"/>
+<rectangle x1="-1.6" y1="-0.75" x2="1.6" y2="0.75" layer="39"/>
+<wire x1="-0.25" y1="0.75" x2="0.25" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-0.25" y1="-0.75" x2="0.25" y2="-0.75" width="0.127" layer="21"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
+<packages3d>
+<package3d name="ABL-8.000MHZ-B2" urn="urn:adsk.eagle:package:32408744/1" type="box">
+<packageinstances>
+<packageinstance name="ABL-8.000MHZ-B2"/>
+</packageinstances>
+</package3d>
+<package3d name="ABM3B-8.000MHZ-B2" urn="urn:adsk.eagle:package:32408738/1" type="box">
+<packageinstances>
+<packageinstance name="ABM3B-8.000MHZ-B2"/>
+</packageinstances>
+</package3d>
+<package3d name="ABS07AIG-32.768KHZ-9-T" urn="urn:adsk.eagle:package:32408740/1" type="box">
+<packageinstances>
+<packageinstance name="ABS07AIG-32.768KHZ-9-T"/>
+</packageinstances>
+</package3d>
+<package3d name="CMR200T32768DZYT" urn="urn:adsk.eagle:package:32408746/1" type="box">
+<packageinstances>
+<packageinstance name="CMR200T32768DZYT"/>
+</packageinstances>
+</package3d>
+<package3d name="CFS-20632768DZCB" urn="urn:adsk.eagle:package:32408742/1" type="box">
+<packageinstances>
+<packageinstance name="CFS-20632768DZCB"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="XTAL">
+<symbol name="XTAL" urn="urn:adsk.eagle:symbol:32408733/1">
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
@@ -132,7 +158,7 @@
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="XTAL2">
+<symbol name="XTAL2" urn="urn:adsk.eagle:symbol:32408731/1">
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
@@ -151,30 +177,8 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CMR200T32768DZYT" prefix="X">
-<description>&lt;b&gt;32.768kHz ±20ppm Crystal 7pF 50 kOhm -40°C ~ 85°C&lt;/b&gt;&lt;br/&gt;
-Surface Mount Cylindrical Can&lt;br/&gt;
-Radial</description>
-<gates>
-<gate name="G$1" symbol="XTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CMR200T32768DZYT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MAN-PART_NUM" value="CMR200T32768DZYT" constant="no"/>
-<attribute name="MANUFACTURER" value="Citizen" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ABL-8.000MHZ-B2" prefix="X">
-<description>&lt;b&gt;8MHz ±20ppm Crystal&lt;/b&gt;&lt;br/&gt;
+<deviceset name="ABL-8.000MHZ-B2" prefix="X" urn="urn:adsk.eagle:component:32408755/1">
+<description>&lt;b&gt;8MHz ±20ppm Crystal&lt;/b&gt;&lt;br/&gt;&#xD;
 18pF 80 Ohm -20°C ~ 70°C Through Hole HC49/US</description>
 <gates>
 <gate name="G$1" symbol="XTAL" x="0" y="0"/>
@@ -185,6 +189,9 @@ Radial</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:32408744/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MAN-PART_NUM" value="ABL-8.000MHZ-B2" constant="no"/>
@@ -194,50 +201,8 @@ Radial</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CFS-20632768DZCB" prefix="X">
-<description>&lt;b&gt;32.768kHz ±20ppm Crystal&lt;/b&gt;&lt;br/&gt;
-9pF 35 kOhm -20°C ~ 70°C Through Hole Cylindrical Can, Radial</description>
-<gates>
-<gate name="G$1" symbol="XTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CFS-20632768DZCB">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MAN-PART_NUM" value="CFS-20632768DZCB" constant="no"/>
-<attribute name="MANUFACTURER" value="Citizen" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ABS07AIG-32.768KHZ-9-T" prefix="X">
-<description>&lt;b&gt;32.768kHz ±20ppm Crystal&lt;/b&gt;&lt;br/&gt;
-9pF 70 kOhm -40°C ~ 125°C AEC-Q200 Surface Mount 2-SMD, No Lead</description>
-<gates>
-<gate name="G$1" symbol="XTAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ABS07AIG-32.768KHZ-9-T">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MAN-PART_NUM" value="ABS07AIG-32.768KHZ-9-T" constant="no"/>
-<attribute name="MANUFACTURER" value="Abracon" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ABM3B-8.000MHZ-B2" prefix="X">
-<description>&lt;b&gt;8MHz ±20ppm Crystal&lt;/b&gt;&lt;br/&gt;
+<deviceset name="ABM3B-8.000MHZ-B2" prefix="X" urn="urn:adsk.eagle:component:32408749/1">
+<description>&lt;b&gt;8MHz ±20ppm Crystal&lt;/b&gt;&lt;br/&gt;&#xD;
 18pF 200 Ohms 4-SMD, No Lead</description>
 <gates>
 <gate name="G$1" symbol="XTAL2" x="0" y="0"/>
@@ -249,6 +214,9 @@ Radial</description>
 <connect gate="G$1" pin="2" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2 4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:32408738/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="MAN-PART_NUM" value="ABM3B-8.000MHZ-B2" constant="no"/>
@@ -258,7 +226,92 @@ Radial</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CMR200T32768DZYT" prefix="X" urn="urn:adsk.eagle:component:32408757/1">
+<description>&lt;b&gt;32.768kHz ±20ppm Crystal 7pF 50 kOhm -40°C ~ 85°C&lt;/b&gt;&lt;br/&gt;&#xD;
+Surface Mount Cylindrical Can&lt;br/&gt;&#xD;
+Radial</description>
+<gates>
+<gate name="G$1" symbol="XTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CMR200T32768DZYT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:32408746/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MAN-PART_NUM" value="CMR200T32768DZYT" constant="no"/>
+<attribute name="MANUFACTURER" value="Citizen" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CFS-20632768DZCB" prefix="X" urn="urn:adsk.eagle:component:32408753/1">
+<description>&lt;b&gt;32.768kHz ±20ppm Crystal&lt;/b&gt;&lt;br/&gt;&#xD;
+9pF 35 kOhm -20°C ~ 70°C Through Hole Cylindrical Can, Radial</description>
+<gates>
+<gate name="G$1" symbol="XTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CFS-20632768DZCB">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:32408742/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MAN-PART_NUM" value="CFS-20632768DZCB" constant="no"/>
+<attribute name="MANUFACTURER" value="Citizen" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ABS07AIG-32.768KHZ-9-T" prefix="X" urn="urn:adsk.eagle:component:32408751/1">
+<description>&lt;b&gt;32.768kHz ±20ppm Crystal&lt;/b&gt;&lt;br/&gt;&#xD;
+9pF 70 kOhm -40°C ~ 125°C AEC-Q200 Surface Mount 2-SMD, No Lead</description>
+<gates>
+<gate name="G$1" symbol="XTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABS07AIG-32.768KHZ-9-T">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:32408740/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MAN-PART_NUM" value="ABS07AIG-32.768KHZ-9-T" constant="no"/>
+<attribute name="MANUFACTURER" value="Abracon" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note severity="warning" version="8.3">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note severity="warning" version="8.3">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
